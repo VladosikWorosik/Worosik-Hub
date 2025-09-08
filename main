@@ -38,3 +38,15 @@ local Window = Rayfield:CreateWindow({
 })
 
 local Tab = Window:CreateTab("Choose Game", 4483362458) -- Title, Image
+Rayfield:Notify({
+   Title = "Succesfly",
+   Content = "Script Loaded",
+   Duration = 6.5,
+   Image = 4483362458,
+})
+local Button = Tab:CreateButton({
+   Name = "Tower Of Hell",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/VladosikWorosik/Worosik-Hub/refs/heads/main/towerofhell"))()
+   end,
+})
